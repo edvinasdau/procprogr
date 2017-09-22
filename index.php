@@ -104,6 +104,18 @@ $tel = "+370 688 77777";
 echo format_number($tel);*/
 
 
-parasyt funkcija, kuri parodys kiek dienu liko iki Kaledu.
 
+
+$xmas = strtotime("2017-12-25");
+$now = strtotime("now");
+$diff = $xmas - $now;
+
+echo 'Iki Kaledu liko ' . floor($diff/(60*60*24)) . ' dienos<br>';
+
+
+$sep = strtotime("2018-09-01");
+$now = strtotime("now");
+$diff = $sep - $now;
+
+echo 'Iki rugsejo 1-osios liko ' . floor($diff/(60*60*24)) . ' dienos';
 
