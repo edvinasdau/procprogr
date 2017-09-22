@@ -101,7 +101,7 @@ function format_number_e($t){
 }
 
 $tel = "+370 688 77777";
-echo format_number($tel);*/
+echo format_number($tel);
 
 
 
@@ -117,5 +117,27 @@ $sep = strtotime("2018-09-01");
 $now = strtotime("now");
 $diff = $sep - $now;
 
-echo 'Iki rugsejo 1-osios liko ' . floor($diff/(60*60*24)) . ' dienos';
+echo 'Iki rugsejo 1-osios liko ' . floor($diff/(60*60*24)) . ' dienos';*/
 
+
+$arr1 = [0,1,3,7,2,5,6,8,10,12];
+$arr2 = range(1,max($arr1));                                                    
+$missing = array_diff($arr2,$arr1);
+print_r($missing);
+?>
+
+<pre>
+<?php
+
+$a = [0,1,3,7,2,5,6,8,9,10,11,12];
+
+print_r($a);
+sort($a);
+print_r($a);
+
+foreach ($a as $key => $value) {
+	if ($key != $value){
+		echo $key;
+		die();
+	}
+}
