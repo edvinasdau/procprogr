@@ -1,18 +1,18 @@
 <?php
 include "Dog.php";
 
-$suo = new Dog("Edvinas", "Bob");
+$suo = new Dog("Edvinas", "Mikis");
 
 $suo->owner = "Edvinas";
 $suo->color = "black";
-$suo->name = "Bob";
+$suo->name = "Mikis";
 $suo->size = "big";
 $suo->breed = "taxas";
 
-$suo->walk("park");
+$suo->walk();
 $suo->eat();
 $suo->sleep();
 $suo->bark();
-$suo->shit();
 $suo->destroy();
-
+$suo->breed;
+$suo->color;
